@@ -1,0 +1,176 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap)
+;@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+@-webkit-keyframes shake{
+    from{-webkit-transform:translate3d(1px,0,0);
+        transform:translate3d(1px,0,0)
+    }
+    50%{-webkit-transform:translate3d(-4px,0,0);
+        transform:translate3d(-4px,0,0)
+    }
+    to{
+        -webkit-transform:translate3d(4px,0,0);
+        transform:translate3d(4px,0,0)
+    }
+}
+@keyframes shake{
+    from{
+        -webkit-transform:translate3d(1px,0,0);
+        transform:translate3d(1px,0,0)
+    }
+    50%{
+        -webkit-transform:translate3d(-4px,0,0);
+        transform:translate3d(-4px,0,0)
+    }
+    to{
+        -webkit-transform:translate3d(4px,0,0);
+        transform:translate3d(4px,0,0)
+    }
+}
+        .nav-item{
+        margin:0
+        }
+        .nav-link{
+            padding:10px 20px;
+            background-color:#f9f9f9;
+            font-weight:600;
+            margin-right:10px;
+            -webkit-border-radius:8px;
+            border-radius:8px;
+            color:#1d2228
+        }
+        .nav-link.active{
+            background-color:#ed4e53;
+            color:#fff
+        }
+        .navbar{
+            position:relative;
+            z-index:2;
+            height:136px;
+            padding:33px 50px 0 60px;
+            -webkit-transition:background-image .2s ease,padding .3s linear,-webkit-box-shadow .2s ease;transition:background-image .2s ease,padding .3s linear,-webkit-box-shadow .2s ease;-o-transition:background-image .2s ease,box-shadow .2s ease,padding .3s linear;transition:background-image .2s ease,box-shadow .2s ease,padding .3s linear;transition:background-image .2s ease,box-shadow .2s ease,padding .3s linear,-webkit-box-shadow .2s ease
+        }
+        .navbar .call-delivery{
+            margin-bottom:25px;
+            display:-webkit-box;
+            display:-webkit-flex;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-align:center;
+            -webkit-align-items:center;
+            -ms-flex-align:center;
+            align-items:center;
+            -webkit-box-pack:end;
+            -webkit-justify-content:flex-end;
+            -ms-flex-pack:end;
+            justify-content:flex-end
+        }
+        .navbar .call-delivery-icon{
+            margin-right:15px;
+            -webkit-animation:shake .9s cubic-bezier(.36,.07,.19,.97) infinite;
+            animation:shake .9s cubic-bezier(.36,.07,.19,.97) infinite;
+            -webkit-transform:translate3d(0,0,0);
+            transform:translate3d(0,0,0);
+            -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+            -webkit-perspective:5000px;
+            perspective:5000px
+        }
+        .navbar .call-delivery-number{
+            font-size:17px;
+            font-weight:700;
+            font-family:Montserrat,sans-serif
+        }
+        .navbar .call-delivery-number a{
+            color:#3d2514;
+            font-weight:700
+        }
+        .navbar.affix{
+            position:fixed!important;
+            padding-top:0;
+            background-image:url(../../assets/img/banner/bg.png);
+            -webkit-box-shadow:1px 0 10px rgba(0,0,0,.1);
+            box-shadow:1px 0 10px rgba(0,0,0,.1)
+        }
+        .navbar.affix-top{
+            position:absolute;
+            top:0;left:0;
+            width:100%
+        }
+        .navbar-brand{
+            padding:0;
+            text-transform:uppercase;
+            font-family:'Bebas Neue',sans-serif;
+            font-size:36px;
+            font-weight:700
+        }
+        .navbar-brand img{
+            margin-right:10px
+        }
+        .navbar-brand img::-moz-selection{
+            background:0 0
+        }
+        .navbar-brand img::selection{
+            background:0 0
+        }
+        .navbar-brand::-moz-selection{
+            background:0 0
+        }
+        .navbar-brand::selection{
+            background:0 0
+        }
+        .navbar-collapse.collapse{
+            display:-webkit-box;
+            display:-webkit-flex;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-align:center;
+            -webkit-align-items:center;
+            -ms-flex-align:center;
+            align-items:center;
+            -webkit-box-pack:end;
+            -webkit-justify-content:flex-end;
+            -ms-flex-pack:end;
+            justify-content:flex-end
+        }
+        .navbar-right{
+            text-align:right
+        }
+        .navbar-nav{
+            -webkit-box-orient:horizontal;
+            -webkit-box-direction:normal;
+            -webkit-flex-direction:row;
+            -ms-flex-direction:row;
+            flex-direction:row
+        }
+        .navbar-nav>li>a{
+            font-size:25px;
+            font-weight:500;
+            letter-spacing:4px;
+            line-height:30px;
+            text-transform:uppercase;
+            margin-left:50px;
+            position:relative;
+            text-shadow:none;
+            font-family:'Bebas Neue',sans-serif;
+            color:#3d2514
+        }
+        .navbar-nav>li>a:focus,.navbar-nav>li>a:hover{
+            background-color:transparent;
+            color:#3d2514
+        }
+        .navbar-nav>li.active>a{
+            color:#ffd630
+        }
+        #navbar_content{
+            display:-webkit-box;
+            display:-webkit-flex;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-pack:justify;
+            -webkit-justify-content:space-between;
+            -ms-flex-pack:justify;
+            justify-content:space-between;
+            width:100%
+        }
